@@ -4,8 +4,9 @@
 
 This Google Sheets custom function enables you to fetch categories similar to a given keyword from a vector database. It employs the OpenAI API to generate a vector for the keyword and the Pinecone API to locate the most similar categories in the database.
 
-![CleanShot 2023-10-04 at 17 16 03@2x](https://github.com/yigitkonur/pineconedb-appscript-integration-for-sheets/assets/9989650/e0e2fba6-a510-405d-a9f2-7341d608987a)
+As the AI department at Wope, we needed something like this to test the embeddings we've created 👇
 
+![CleanShot 2023-10-04 at 17 27 17@2x](https://github.com/yigitkonur/pineconedb-appscript-integration-for-sheets/assets/9989650/29814a8d-0a62-4edc-970b-944ee1cc7fc3)
 
 ## Prerequisites
 
@@ -39,6 +40,9 @@ Here are the parameters you can use:
 - `separator` (optional): The separator used in the category path. Default is ' -> '.
 
 Here are some examples of how to use the function:
+
+![CleanShot 2023-10-04 at 17 28 48@2x](https://github.com/yigitkonur/pineconedb-appscript-integration-for-sheets/assets/9989650/9d0ff58f-24c6-4abf-a4c6-5dc56415ca81)
+
 
 - `=VECTORDB(A2)`: Returns one result with all categories, without scores. Here, `A2` is the cell reference that contains the keyword.
 - `=VECTORDB("keyword")`: Returns one result with all categories, without scores. Here, `"keyword"` is the keyword string.
